@@ -1,0 +1,98 @@
+footer{
+    width: 100%;
+    // padding: 100px 0;
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        h1{
+            width: 300px;
+            img{
+                width: 100%;
+            }
+        }
+        nav{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .menu{
+                margin-bottom: 50px;
+                li{
+                    float: left;
+                    margin-right: 100px;
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                    a{
+                        display: block;
+                        font: bold 16px/1 "arial";
+                        color: #999;
+                        position: relative;
+                    }
+                }
+            }
+            .sns{
+                li{
+                    float: left;
+                    margin-right: 100px;
+                    color: #999;
+                    display: block;
+                    font-size: 28px;
+                    position: relative;
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 292px) {
+    footer{
+        padding-bottom: 50px;
+        .inner{
+            width: 100%;
+            display: block;
+            h1{
+                width: 280px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                img{
+                    width: 100%;
+                }
+            }
+            nav{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .menu{
+                    li{
+                        margin-right: 30px;
+                    }
+                }
+                .sns{
+                    li{
+                        float: left;
+                        margin-right: 40px;
+                        color: #999;
+                        display: block;
+                        font-size: 28px;
+                        position: relative;
+                        &:last-child{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

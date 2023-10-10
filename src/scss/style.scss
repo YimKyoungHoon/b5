@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+$mobile: 292px;
+
+@import "./common/reset";
+@import "./common/header";
+@import "./common/footer";
+@import "./common/layout";
+
+@import "./main/main";
+@import "./main/member";
+@import "./main/discography";
+@import "./main/site";
+
+@import "./sub/story";
+@import "./sub/studioAlbum";
+@import "./sub/map";
+
+#root{
+    background-color: #333;
+}
+
+// DM Serif Display

@@ -1,0 +1,542 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  background-color: #000;
+}
+header .inner {
+  width: 1180px;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+header .inner h1 {
+  width: 300px;
+}
+header .inner h1 img {
+  width: 100%;
+}
+header .inner nav {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .inner nav #menuWeb li {
+  float: left;
+  margin-right: 100px;
+}
+header .inner nav #menuWeb li:last-child {
+  margin-right: 0px;
+}
+header .inner nav #menuWeb li a {
+  display: block;
+  font: bold 16px/1 "arial";
+  color: #999;
+  position: relative;
+}
+header .inner .fa-bars {
+  font-size: 24px;
+  color: #aaa;
+  position: absolute;
+  right: 10vw;
+  top: 70px;
+  display: none;
+  cursor: pointer;
+}
+header .inner .menuMobile {
+  width: 200px;
+  height: 100vh;
+  background-color: #555;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  padding: 30px 30px;
+  transition: 0.5s;
+  z-index: 3;
+}
+header .inner .menuMobile.on {
+  left: 0;
+}
+header .inner .menuMobile h1 {
+  width: 100%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+header .inner .menuMobile h1 a {
+  display: block;
+  font: bold 30px/1 "DM Serif Display";
+  color: #eed80f;
+}
+header .inner .menuMobile #menuMo li a {
+  display: block;
+  width: 100%;
+  padding: 30px;
+  border-bottom: 1px solid #333;
+  font: bold 20px/1 "arial";
+  color: #aaa;
+  text-align: center;
+}
+
+@media screen and (max-width: 292px) {
+  header {
+    width: 100%;
+  }
+  header .inner {
+    width: 100%;
+    padding: 10px;
+  }
+  header .inner h1 {
+    width: 150px;
+  }
+  header .inner h1 img {
+    width: 100%;
+  }
+  header .inner nav #menuWeb {
+    display: none;
+  }
+  header .inner .fa-bars {
+    display: block;
+  }
+}
+footer {
+  width: 100%;
+}
+footer .inner {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .inner h1 {
+  width: 300px;
+}
+footer .inner h1 img {
+  width: 100%;
+}
+footer .inner nav {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .inner nav .menu {
+  margin-bottom: 50px;
+}
+footer .inner nav .menu li {
+  float: left;
+  margin-right: 100px;
+}
+footer .inner nav .menu li:last-child {
+  margin-right: 0px;
+}
+footer .inner nav .menu li a {
+  display: block;
+  font: bold 16px/1 "arial";
+  color: #999;
+  position: relative;
+}
+footer .inner nav .sns li {
+  float: left;
+  margin-right: 100px;
+  color: #999;
+  display: block;
+  font-size: 28px;
+  position: relative;
+}
+footer .inner nav .sns li:last-child {
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 292px) {
+  footer {
+    padding-bottom: 50px;
+  }
+  footer .inner {
+    width: 100%;
+    display: block;
+  }
+  footer .inner h1 {
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  footer .inner h1 img {
+    width: 100%;
+  }
+  footer .inner nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .inner nav .menu li {
+    margin-right: 30px;
+  }
+  footer .inner nav .sns li {
+    float: left;
+    margin-right: 40px;
+    color: #999;
+    display: block;
+    font-size: 28px;
+    position: relative;
+  }
+  footer .inner nav .sns li:last-child {
+    margin-right: 0px;
+  }
+}
+section {
+  width: 100%;
+}
+section img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#slider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 200px 0;
+  overflow: hidden;
+}
+#slider ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+}
+#slider ul li img {
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.prev {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+}
+
+.next {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+}
+
+@media screen and (max-width: 292px) {
+  #slider {
+    height: 100%;
+    padding: 100px 0;
+  }
+  .prev {
+    position: absolute;
+    top: 40%;
+  }
+  .prev img {
+    width: 25px;
+    height: 70px;
+  }
+  .next {
+    position: absolute;
+    top: 40%;
+  }
+  .next img {
+    width: 25px;
+    height: 70px;
+  }
+}
+#member {
+  width: 100%;
+  padding: 200px 0;
+}
+#member .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+#member .inner h1 {
+  font: bold 75px/1 "DM Serif Display";
+  color: orange;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#member .inner .wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#member .inner .wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#member .inner .wrap article {
+  width: 333.3333333333px;
+  float: left;
+  margin-right: 30px;
+  text-align: center;
+  border: 3px solid #fff;
+}
+#member .inner .wrap article:last-child {
+  margin-right: 0px;
+}
+#member .inner .wrap article .pic {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+}
+#member .inner .wrap article .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#member .inner .wrap article h2 {
+  font: bold 24px/1 "arial";
+  color: yellow;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+#member .inner .wrap article h2 span {
+  font: 24px/1 "arial";
+  color: yellow;
+  margin-bottom: 10px;
+  display: block;
+}
+#member .inner .wrap article p {
+  font: 16px/1.4 "arial";
+  color: #aaa;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+#member .inner .wrap article b {
+  font: 20px/1.4 "arial";
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 292px) {
+  #member {
+    padding-bottom: 100px;
+  }
+  #member .inner {
+    width: 100%;
+  }
+  #member .inner h1 {
+    font: bold 50px/1 "DM Serif Display";
+  }
+  #member .inner .wrap {
+    width: 100%;
+    display: block;
+    padding: 0 50px;
+  }
+  #member .inner .wrap article {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-bottom: 20px;
+  }
+  #member .inner .wrap article .pic {
+    width: 100%;
+    height: 70%;
+  }
+  #member .inner .wrap article h2 {
+    font: bold 20px/1 "arial";
+  }
+}
+#discography {
+  width: 100%;
+  padding: 200px 0;
+  text-align: center;
+}
+#discography h1 {
+  font: bold 75px/1 "DM Serif Display";
+  color: orange;
+  margin-bottom: 50px;
+}
+#discography nav {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  background-color: #555;
+}
+#discography nav a {
+  font: 24px/1 "Black And White Picture";
+  color: #aaa;
+}
+#discography nav a:hover {
+  color: orange;
+}
+#discography section {
+  display: none;
+  padding: 5px;
+}
+#discography section.on {
+  display: block;
+}
+#discography section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#discography section article {
+  width: 25%;
+  height: 25vw;
+  float: left;
+  padding: 5px;
+}
+#discography section article img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.5s;
+}
+#discography section.active article img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media screen and (max-width: 292px) {
+  #discography h1 {
+    font: bold 42px/1 "DM Serif Display";
+  }
+  #discography nav a {
+    font: 16px/1 "Black And White Picture";
+  }
+  #discography section article {
+    width: 50%;
+    height: 50vw;
+  }
+}
+#news {
+  width: 100%;
+  padding: 200px 0;
+}
+#news .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+#news .inner h1 {
+  font: bold 75px/1 "DM Serif Display";
+  color: orange;
+  margin-bottom: 20px;
+}
+#news .inner strong {
+  display: block;
+  font: bold 24px/1 "Black And White Picture";
+  color: #ddd;
+  margin-bottom: 50px;
+}
+#news .inner .wrap {
+  width: 100%;
+}
+#news .inner .wrap article {
+  width: 100%;
+  margin: 0 auto;
+}
+#news .inner .wrap article img {
+  width: 400px;
+  object-fit: cover;
+  transition: all 0.5s;
+  opacity: 0.5;
+}
+#news .inner .wrap article:hover img {
+  opacity: 1;
+}
+#news .inner .wrap article h2 {
+  text-align: center;
+}
+#news .inner .wrap article h2 a {
+  font: bold 24px/2 "Black And White Picture";
+  color: #555;
+}
+#news .inner .wrap article h2 a:hover {
+  color: orange;
+}
+
+@media screen and (max-width: 292px) {
+  #news {
+    padding: 100px 30px;
+  }
+  #news .inner {
+    width: 100%;
+  }
+  #news .inner h1 {
+    font: bold 50px/1 "DM Serif Display";
+  }
+  #news .inner strong {
+    font: bold 20px/1 "Black And White Picture";
+  }
+  #news .inner .wrap article {
+    width: 100%;
+    margin-right: 2%;
+    margin-bottom: 60px;
+  }
+  #news .inner .wrap article img {
+    width: 200px;
+  }
+}
+.map {
+  width: 100%;
+  padding: 200px 0;
+}
+.map .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.map .inner h1 {
+  font: 75px/1 "Sedgwick Ave Display";
+  text-align: center;
+  color: orange;
+  margin-bottom: 30px;
+}
+.map .inner h1 span {
+  display: block;
+  font: bold 48px/1 "Black And White Picture";
+  color: orange;
+}
+.map #map {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
