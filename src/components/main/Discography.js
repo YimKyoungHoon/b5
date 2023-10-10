@@ -33,76 +33,76 @@ btnDiscography.forEach((el, index) => {
         </nav>
         <section id="All" class="on active">
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/bleach.jpg"} alt="정규1집 bleach"/>
+                <img src={process.env.PUBLIC_URL + "/img/bleach.jpg"} alt="정규1집 bleach"/>
             </article>
             <article>
-                <img src="./img/hormoaning.jpg" alt="컴필앨범 hormoaning"/>
+                <img src={process.env.PUBLIC_URL + "/img/hormoaning.jpg"} alt="컴필앨범 hormoaning"/>
             </article>
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/Incesticide.jpg"} alt="컴필앨범 Incesticide"/>
+                <img src={process.env.PUBLIC_URL + "/img/Incesticide.jpg"} alt="컴필앨범 Incesticide"/>
             </article>
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/InUtero.jpg"} alt="정규3집 In Utero"/>
+                <img src={process.env.PUBLIC_URL + "/img/InUtero.jpg"} alt="정규3집 In Utero"/>
             </article>    
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/Live-at-Reading.jpg"} alt="라이브앨범 Live at Reading"/>
+                <img src={process.env.PUBLIC_URL + "/img/Live-at-Reading.jpg"} alt="라이브앨범 Live at Reading"/>
             </article>
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/MuddyBanks.jpg"} alt="라이브앨범 From The Muddy Banks of The Wishkah"/>
+                <img src={process.env.PUBLIC_URL + "/img/MuddyBanks.jpg"} alt="라이브앨범 From The Muddy Banks of The Wishkah"/>
             </article>
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/Nevermind.jpg"} alt="정규2집 Nevermind"/>
+                <img src={process.env.PUBLIC_URL + "/img/Nevermind.jpg"} alt="정규2집 Nevermind"/>
             </article>    
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/nirvana.jpg"} alt="컴필앨범 nirvana"/>
+                <img src={process.env.PUBLIC_URL + "/img/nirvana.jpg"} alt="컴필앨범 nirvana"/>
             </article>    
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/sliver.jpg"} alt="컴필앨범 Sliver: The Best of the Box"/>
+                <img src={process.env.PUBLIC_URL + "/img/sliver.jpg"} alt="컴필앨범 Sliver: The Best of the Box"/>
             </article>    
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/Unplugged.jpg"} alt="라이브앨범 MTV Unplugged in New York"/>
+                <img src={process.env.PUBLIC_URL + "/img/Unplugged.jpg"} alt="라이브앨범 MTV Unplugged in New York"/>
             </article>    
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/WithTheLightsOut.jpg"} alt="컴필앨범 With The LightsOut"/>
+                <img src={process.env.PUBLIC_URL + "/img/WithTheLightsOut.jpg"} alt="컴필앨범 With The LightsOut"/>
             </article> 
         </section>
         <section id="Studio">
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/bleach.jpg"} alt="정규1집 bleach"/>
+                <img src={process.env.PUBLIC_URL + "/img/bleach.jpg"} alt="정규1집 bleach"/>
             </article>
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/Nevermind.jpg"} alt="정규2집 Nevermind"/>
+                <img src={process.env.PUBLIC_URL + "/img/Nevermind.jpg"} alt="정규2집 Nevermind"/>
             </article>
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/InUtero.jpg"} alt="정규3집 In Utero"/>
+                <img src={process.env.PUBLIC_URL + "/img/InUtero.jpg"} alt="정규3집 In Utero"/>
             </article>
         </section>
         <section id="Live">
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/Unplugged.jpg"} alt="라이브앨범 MTV Unplugged in New York"/>
+                <img src={process.env.PUBLIC_URL + "/img/Unplugged.jpg"} alt="라이브앨범 MTV Unplugged in New York"/>
             </article>
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/MuddyBanks.jpg"} alt="라이브앨범 From The Muddy Banks of The Wishkah"/>
+                <img src={process.env.PUBLIC_URL + "/img/MuddyBanks.jpg"} alt="라이브앨범 From The Muddy Banks of The Wishkah"/>
             </article>
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/Live-at-Reading.jpg"} alt="라이브앨범 Live at Reading"/>
+                <img src={process.env.PUBLIC_URL + "/img/Live-at-Reading.jpg"} alt="라이브앨범 Live at Reading"/>
             </article>
         </section>
         <section id="Compil">
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/hormoaning.jpg"} alt="컴필앨범 hormoaning"/>
+                <img src={process.env.PUBLIC_URL + "/img/hormoaning.jpg"} alt="컴필앨범 hormoaning"/>
             </article>
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/Incesticide.jpg"} alt="컴필앨범 Incesticide"/>
+                <img src={process.env.PUBLIC_URL + "/img/Incesticide.jpg"} alt="컴필앨범 Incesticide"/>
             </article>
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/nirvana.jpg"} alt="컴필앨범 nirvana"/>
+                <img src={process.env.PUBLIC_URL + "/img/nirvana.jpg"} alt="컴필앨범 nirvana"/>
             </article>
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/WithTheLightsOut.jpg"} alt="컴필앨범 With The LightsOut"/>
+                <img src={process.env.PUBLIC_URL + "/img/WithTheLightsOut.jpg"} alt="컴필앨범 With The LightsOut"/>
             </article>    
             <article>
-                <img src={process.env.PUBLIC_URL + "./img/sliver.jpg"} alt="컴필앨범 Sliver: The Best of the Box"/>
+                <img src={process.env.PUBLIC_URL + "/img/sliver.jpg"} alt="컴필앨범 Sliver: The Best of the Box"/>
             </article>
         </section>
     </main>
