@@ -1,10 +1,15 @@
 import { NavLink, Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
 
 
 export default function Header() {
+  const btnContext = React.createContext
+
+  function toggleBtn() {
+  }
   // const root = document.getElementById('root')
   // const btn = root.querySelector(".fa-bars")
   // const menuMobile = root.querySelector(".menuMobile")
@@ -58,7 +63,7 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <FontAwesomeIcon icon={faBars} onClick={""}/>
+        <FontAwesomeIcon icon={faBars}/>
         <nav className="menuMobile">
           <h1><Link to="/">NIRVANA</Link></h1>
           <ul id="menuMo">

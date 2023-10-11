@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom/cjs/react-router-dom.min'
 function Main() {
 //   const root = document.getElementById('root')
 //   const ul = root.querySelector("#slider ul");
@@ -100,12 +101,12 @@ function Main() {
             </ul>
             
         </div>
-        <a href="#" class="prev">
+        <NavLink to="/" class="prev">
           <img src={process.env.PUBLIC_URL + '/img/btnPrev.png'} alt="이전버튼" />
-        </a>
-        <a href="#" class="next">
+        </NavLink>
+        <NavLink to="/" class="next">
           <img src={process.env.PUBLIC_URL + '/img/btnNext.png'} alt="다음버튼" />
-        </a>
+        </NavLink>
     </figure>
   )
 }

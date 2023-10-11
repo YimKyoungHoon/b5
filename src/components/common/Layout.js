@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect, useRef } from 'react';
 function Layout({children, name}) {
   const frame = useRef(null);
-  // console.log(frame); //current : null
+  console.log(frame); //current : null
 
   //useEffect를 사용해서 컴포넌트가 마운트 될 때 한번만 frame에 on을 붙여줍니다
   useEffect(()=>{

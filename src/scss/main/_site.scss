@@ -13,7 +13,7 @@
         }
         strong{
             display: block;
-            font: bold 24px/1 "Black And White Picture";
+            font: bold 24px/1 "arial";
             color: #ddd;
             margin-bottom: 100px;
         }
@@ -39,7 +39,7 @@
                     
                     text-align: center;
                     a {
-                        font: bold 24px/2 "Black And White Picture";
+                        font: bold 24px/2 "arial";
                         color: #555;
                         
                         &:hover{
@@ -61,13 +61,11 @@
                 font: bold 50px/1 "DM Serif Display";
             }
             strong{
-                font: bold 20px/1 "Black And White Picture";
+                font: bold 20px/1 "arial";
             }
 			.wrap {
 				article {
 					width: 100%;
-					margin-right: 2%;
-					margin-bottom: 60px;
                     img{
                         width: 200px;
                     }

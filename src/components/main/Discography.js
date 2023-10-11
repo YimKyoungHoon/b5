@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 function Discography() {
   const root = document.getElementById('root')
