@@ -1,16 +1,32 @@
 import { NavLink, Link } from "react-router-dom";
-// import { useEffect, useState } from "react";
+import { useState,useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
 
 export default function Header() {
-  const btnContext = React.createContext
-
-  function toggleBtn() {
-  }
-  // const root = document.getElementById('root')
+  // // const btnRef = useRef(null);
+  // const [clickBtn, setclickBtn] = useState();
+  // // const menuMobileRef = useRef(null);
+  // const [clickMenuMobile, setClickMenuMobile] = useState();
+  
+  // function setclickBtn(e) {
+  //   e.preventDefault();
+  //   clickBtn.classList.toggle("on");
+  // }
+  // function setClickMenuMobile(e) {
+  //   e.preventDefault();
+  //   clickMenuMobile.classList.toggle("on");
+  // }
+  // useEffect(() => {
+  //   // e.preventDefault();
+  //   btn.current.classList.toggle("on");
+  // })
+//   useEffect(() => {
+//     // e.preventDefault();
+//     menuMobile.current.classList.toggle("on");
+//   })
   // const btn = root.querySelector(".fa-bars")
   // const menuMobile = root.querySelector(".menuMobile")
   //   btn.onclick = function (e) {
@@ -25,8 +41,7 @@ export default function Header() {
   // })
 
 
-  // const [btn, setBtn] = useState();
-  // const [menuMo, setMenuMo] = useState(); 
+ 
 
   // function clickBtn(e) {
   //   setBtn(e.preventDefault())
@@ -34,6 +49,36 @@ export default function Header() {
   // useEffect(() => {
     
   // })
+  // const [btn, setBtn] = useState()
+ 
+
+  // function toggleBtn(e) {
+  //   setBtn(e.preventDefault())
+  // }
+  // function toggleMenuMobile(e) {
+  //   setmenuMobile(e.preventDefault())
+  // }
+
+  // useEffect(() => {
+  //   btn.classList.toggle("on");
+  // })
+  // useEffect(() => {
+  //   menuMobile.classList.toggle("on");
+  // })
+  // const [clickBtn, setClickBtn] = useState("")
+
+  // useEffect(() => {
+  //   // e.preventDefault();
+    
+  // },[clickBtn])
+  // function toggleBtn(e) {
+  //   setBtn(e.preventDefault())
+  //   setmenuMobile(e.preventDefault())
+  // }
+  // useEffect(() => {
+  //   btn.classList.toggle("on");
+  //   menuMobile.classList.toggle("on");
+  // },)
 
   
   return (
@@ -63,7 +108,16 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <FontAwesomeIcon icon={faBars}/>
+        <FontAwesomeIcon icon={faBars} /*onClick={{toggleBtn, toggleMenuMobile}}*/
+        // onClick={
+        //   function (e) {
+        //     e.preventDefault();
+        //     btn.classList.toggle("on");
+        //     menuMobile.classList.toggle("on");
+        //   }
+        // }
+        // onClick={() => {setclickBtn(); setClickMenuMobile();}}
+        />
         <nav className="menuMobile">
           <h1><Link to="/">NIRVANA</Link></h1>
           <ul id="menuMo">

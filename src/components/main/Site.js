@@ -23,7 +23,7 @@ function Site() {
                     </h2>
                 </article>
                 <article>
-                        <img src={process.env.PUBLIC_URL + "./img/melon.png"} alt="멜론뮤직"/>
+                        <img src={process.env.PUBLIC_URL + "/img/melon.png"} alt="멜론뮤직"/>
                     <h2>
                         <NavLink to="https://www.melon.com/artist/song.htm?artistId=104355">
                             Melon Music
